@@ -48,7 +48,7 @@ namespace Pacco.Services.Availability.Core.Entities
         public static Resource Create(AggregateId id, IEnumerable<string> tags, IEnumerable<Reservation> reservations = null)
         {
             var resource = new Resource(id, tags, reservations);
-            resource.AddEvent(new ResourceCreted(resource));
+            resource.AddEvent(new ResourceCreated(resource));
             return resource;
         }
     }
