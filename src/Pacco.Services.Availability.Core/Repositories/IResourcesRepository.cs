@@ -7,8 +7,8 @@ namespace Pacco.Services.Availability.Core.Repositories
     public interface IResourcesRepository
     {
         Task<Resource> GetAsync(AggregateId id);
-        Task AddAsync(Resource resources);
-        Task UpdateAsync(Resource resources);
+        Task AddAsync(Resource resource);
+        Task UpdateAsync(Resource resource);
         Task DeleteAsync(AggregateId id);
 
     }
